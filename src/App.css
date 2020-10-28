@@ -1,3 +1,11 @@
+/* Base
+--------------------------------*/
+a:hover, a:active, a:focus {
+  color: #1dc9ce;
+  outline: none;
+  text-decoration: none;
+}
+
 /* Section with background
 --------------------------------*/
 .section-bg {

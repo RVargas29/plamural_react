@@ -1,4 +1,4 @@
-import { Col, Collapse, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import  SectionHeader  from "./SectionHeader";
 
 import "./Features.css"

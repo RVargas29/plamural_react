@@ -19,7 +19,7 @@ const MoreFeaturesBox = ({ iconClass, title, fadeClass = "fadeInLeft",children }
 
 const MoreFeautres = () => {
     return(
-        <section id="more-features" class="section-bg">
+        <section id="more-features" className="section-bg">
             <Container>
                 <SectionHeader text="Servicios de apoyo" >
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque

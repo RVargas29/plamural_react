@@ -11,9 +11,9 @@ const SectionHeader = ({ text, children}) => {
     } 
     
     return (
-        <div class="section-header">
-          <h3 class="section-title">{text}</h3>
-          <span class="section-divider"></span>    
+        <div className="section-header">
+          <h3 className="section-title">{text}</h3>
+          <span className="section-divider"></span>    
           { printDescription(children) }   
         </div>
     )

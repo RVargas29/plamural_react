@@ -16,7 +16,7 @@ const AboutPanel = ({ title, collapseVariable, collapseHandler, children }) => {
             <div className="panel-heading">
                 <h4 className="panel-title">
                     <a href="#collapse1" onClick={ () => handleCollapse(!collapseVariable) }>
-                        <div style={{color:"cadetblue"}}><i class="far fa-check-square"></i> {title}</div>
+                        <div style={{color:"cadetblue"}}><i className="far fa-check-square"></i> {title}</div>
                     </a>
                 </h4>
             </div>

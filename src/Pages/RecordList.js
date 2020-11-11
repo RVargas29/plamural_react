@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { Container, Row } from "react-bootstrap";
 import { getRecordCards } from "../api/record_cards";
+import Record from "../Components/Record";
+import SectionHeader from "../Components/SectionHeader";
 
 const RecordList = () => {
 
@@ -18,8 +21,21 @@ const RecordList = () => {
     }, [])
 
     if(loaded) {
-        return (
-            <h1>This is the records screen</h1>
+        return (     
+            <main>
+                <section id="record-list">       
+                    <Container>
+                        <SectionHeader text="Records" />
+                        <Row>
+                            { records.map((record) => {
+                                return(
+                                    <Record record={record} key={record.id} />
+                                )
+                            }) }
+                        </Row>
+                    </Container>
+                </section>
+            </main>
         )
     } else {
         return (

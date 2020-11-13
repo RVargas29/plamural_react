@@ -1,20 +1,23 @@
 import { Col } from "react-bootstrap";
 
+import "./Record.css"
+
 const Record = ({ record }) => {
 
     const tags = (tags) => {
         if(tags) {
             return (
-                <div><strong>Tags: </strong><span>{ tags }</span></div>                
+                <div><strong>Categoria: </strong><span>{ tags }</span></div>                
             )
         }
     }
        
     return(
         <Col md="4">
-            <h3>{ record.title }</h3>
+            <h3>{ record.nombre }</h3>
             <div>
-                <strong>Country: </strong><span>{ record.countries }</span>
+                <strong>País: </strong><span>{ record.pais }</span>
+                { tags(record.categoria) }
             </div>
         </Col>
     )

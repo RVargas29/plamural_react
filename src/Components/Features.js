@@ -6,7 +6,7 @@ import features from "../static/images/features.jpg";
 
 const FeatureBox = ({ iconClass, title, children }) => {
     return (
-        <Col lg="6" md="6" className="box wow fadeInRight">
+        <Col lg="6" md="6" className="feature-container wow fadeInRight">
             <div className="icon"><i className={"fas " + iconClass}></i></div>
             <h4 className="title"><a href="#">{title}</a></h4>
             <p className="description">

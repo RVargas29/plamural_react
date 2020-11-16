@@ -10,25 +10,36 @@ import "./RecordList.css";
 const RecordList = () => {
 
     var [records, setRecords] = useState(null)
-    var [loaded, setLoaded] = useState(false)
-    var [currentRecord, setCurrentRecord] = useState(null);
-    var [showModal, setShowModal] = useState(false);
+    var [recordCount, setRecordCount] = useState(0)
+    var [currentRecord, setCurrentRecord] = useState(null)
+    var [currentRecordIndex, setcurrentRecordIndex] = useState(0)
+    var [loaded, setLoaded] = useState(false)    
+    var [showModal, setShowModal] = useState(false)
 
-    const handleOpen = (record) => {
+    const handleOpen = (record, arrayPosition) => {
         setCurrentRecord(record)
+        setcurrentRecordIndex(arrayPosition)
         setShowModal(true);
     } 
 
     const handleClose = () => {
         setCurrentRecord(null)
+        setcurrentRecordIndex(0)
         setShowModal(false)
+    }
+
+    const handlePreviousNext = (arrayPosition) => {
+        setCurrentRecord(records[arrayPosition])
+        setcurrentRecordIndex(arrayPosition)
     }
 
     useEffect(() => {
         getRecordCards()
         .then((res) => {
             setRecords(res)
+            setRecordCount(res.length)
             setLoaded(true)
+            
         })
         .catch(error => {
             console.log(error)
@@ -42,14 +53,14 @@ const RecordList = () => {
                     <Container>
                         <SectionHeader text="Records" />
                         <Row>
-                            { records.map((record) => {
+                            { records.map((record, index) => {
                                 return(
-                                    <Record record={record} key={record.id} handleOpen={ handleOpen } />
+                                    <Record record={record} arrayPosition={index} handleOpen={ handleOpen } />
                                 )
                             }) }
                         </Row>
                     </Container>
-                    <RecordModal record={ currentRecord } handleClose={ handleClose } show={ showModal }/>
+                    <RecordModal record={ currentRecord } recordIndex={ currentRecordIndex } handleClose={ handleClose } handlePreviousNext={ handlePreviousNext } show={ showModal } recordCount={ recordCount }/>
                 </section>
             </main>
         )

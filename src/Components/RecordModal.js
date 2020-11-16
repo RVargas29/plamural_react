@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { Button, Col, Modal, Row } from "react-bootstrap";
+import { Button, ButtonGroup, Col, Modal, Row } from "react-bootstrap";
 import "./RecordModal.scss";
 
 const RecordField = ({ label, inline=true, html=false, children}) => {
@@ -66,7 +66,34 @@ const AlcanceTable = ({ subsidios_produccion, credito, asistencia_tecnica, capac
     )
 }
 
-const RecordModal = ({record, show, handleClose}) => {
+const PNButtonGroup = ({recordIndex, recordCount, handlePreviousNext}) => {
+    var handlePreviousNextCallback = handlePreviousNext
+    var previous = null;
+    var next = null;
+    if(recordIndex > 0) {
+        previous = (
+            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex-1)}}>
+                Anterior
+            </Button>
+        )
+    }
+    if(recordIndex < recordCount - 1) {
+        next = (
+            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex+1)}}>
+                Siguiente
+            </Button>
+        )
+    }
+    return(
+        <ButtonGroup>                        
+            {previous}
+                {next}
+        </ButtonGroup>
+    )
+}
+
+const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handlePreviousNext}) => {
+    
     if(show) {
         return(
             <Modal show={show} onHide={handleClose} size="lg">
@@ -91,9 +118,7 @@ const RecordModal = ({record, show, handleClose}) => {
                     <AlcanceTable subsidios_produccion={record.subsidios_produccion} credito={record.credito} asistencia_tecnica={record.asistencia_tecnica} capacitacion={record.capacitacion} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>
-                        Cerrar
-                    </Button>
+                    <PNButtonGroup recordIndex={recordIndex} recordCount={recordCount} handlePreviousNext={handlePreviousNext} />
                 </Modal.Footer>
             </Modal>
         )

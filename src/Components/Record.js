@@ -2,7 +2,7 @@ import { Button, ButtonGroup, Col } from "react-bootstrap";
 
 import "./Record.css"
 
-const Record = ({ record, handleOpen }) => {
+const Record = ({ record, handleOpen, arrayPosition }) => {
 
     var handleOpenCallback = handleOpen;
 
@@ -23,7 +23,7 @@ const Record = ({ record, handleOpen }) => {
                     { tags(record.categoria) }
                     <ButtonGroup>
                         <Button onClick={ () => {
-                            handleOpenCallback(record)
+                            handleOpenCallback(record, arrayPosition)
                         } }><i class="fas fa-info"></i> Más información</Button>
                     </ButtonGroup>
                 </div>

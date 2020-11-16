@@ -1,8 +1,10 @@
-import { Col } from "react-bootstrap";
+import { Button, ButtonGroup, Col } from "react-bootstrap";
 
 import "./Record.css"
 
-const Record = ({ record }) => {
+const Record = ({ record, handleOpen }) => {
+
+    var handleOpenCallback = handleOpen;
 
     const tags = (tags) => {
         if(tags) {
@@ -13,11 +15,18 @@ const Record = ({ record }) => {
     }
        
     return(
-        <Col md="4">
-            <h3>{ record.nombre }</h3>
-            <div>
-                <strong>País: </strong><span>{ record.pais }</span>
-                { tags(record.categoria) }
+        <Col md="6">
+            <div className="record-container box">
+                <h4 className="title">{ record.nombre }</h4>
+                <div>
+                    <strong>País: </strong><span>{ record.pais }</span>
+                    { tags(record.categoria) }
+                    <ButtonGroup>
+                        <Button onClick={ () => {
+                            handleOpenCallback(record)
+                        } }><i class="fas fa-info"></i> Más información</Button>
+                    </ButtonGroup>
+                </div>
             </div>
         </Col>
     )

@@ -45,12 +45,6 @@
     -webkit-text-fill-color: transparent;
 }
   
-#features .title {
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-  
 #features .title a {
     color: #111;
 }

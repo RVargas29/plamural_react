@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import Intro from './Components/Intro';
 import Home from './Pages/Home';
 import RecordList from "./Pages/RecordList";
-import "./App.css"
+import "./App.scss"
 
 
 function App() {

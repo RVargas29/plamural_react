@@ -1,0 +1,37 @@
+/* make the customizations */
+$theme-colors: (
+    "primary": #666666,
+    "secondary": #55fabe
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+/* Base
+--------------------------------*/
+a:hover, a:active, a:focus {
+  color: #1dc9ce;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: #eff5f5;
+}
+
+/*Box*/
+.box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  transition: 0.4s;
+}
+
+/* Box Title */
+.title {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 22px;
+}

@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { Button, ButtonGroup, Col, Modal, Row } from "react-bootstrap";
-import "./RecordModal.scss";
+import "./RecordModal.css";
 
 const RecordField = ({ label, inline=true, html=false, children}) => {
     const renderChildren = (children) => {

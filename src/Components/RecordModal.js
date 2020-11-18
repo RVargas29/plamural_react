@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import { Button, ButtonGroup, Col, Modal, Row } from "react-bootstrap";
+import PNButtonGroup from "./Generic/PNButtonGroup";
 import "./RecordModal.css";
 
 const RecordField = ({ label, inline=true, html=false, children}) => {
@@ -63,32 +64,6 @@ const AlcanceTable = ({ subsidios_produccion, credito, asistencia_tecnica, capac
                 </table>
             </Col>
         </Row>
-    )
-}
-
-const PNButtonGroup = ({recordIndex, recordCount, handlePreviousNext}) => {
-    var handlePreviousNextCallback = handlePreviousNext
-    var previous = null;
-    var next = null;
-    if(recordIndex > 0) {
-        previous = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex-1)}}>
-                Anterior
-            </Button>
-        )
-    }
-    if(recordIndex < recordCount - 1) {
-        next = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex+1)}}>
-                Siguiente
-            </Button>
-        )
-    }
-    return(
-        <ButtonGroup>                        
-            {previous}
-                {next}
-        </ButtonGroup>
     )
 }
 

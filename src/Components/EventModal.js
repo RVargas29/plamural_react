@@ -9,7 +9,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
     var [programa, setPrograma] = useState(null)
     var [hasLoaded, setHasLoaded] = useState(false)
     
-    if(show) {
+    if(show && event) {
         return (
             <Modal show={show} onHide={handleClose} size="lg">
                 <Modal.Header closeButton>

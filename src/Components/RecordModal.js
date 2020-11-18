@@ -41,7 +41,7 @@ const AlcanceTable = ({ subsidios_produccion, credito, asistencia_tecnica, capac
 
 const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handlePreviousNext}) => {
     
-    if(show) {
+    if(show && record) {
         return(
             <Modal show={show} onHide={handleClose} size="lg">
                 <Modal.Header closeButton>

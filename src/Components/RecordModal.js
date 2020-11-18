@@ -1,36 +1,8 @@
 import { render } from "@testing-library/react";
 import { Button, ButtonGroup, Col, Modal, Row } from "react-bootstrap";
+import GenericField from "./Generic/GenericField";
 import PNButtonGroup from "./Generic/PNButtonGroup";
 import "./RecordModal.css";
-
-const RecordField = ({ label, inline=true, html=false, children}) => {
-    const renderChildren = (children) => {
-        if(!html) {
-            return (
-                <span>{children}</span>
-            );
-        } else {
-            return (
-                <div dangerouslySetInnerHTML={{ __html: children }}></div>
-            )
-        }
-    }
-    if(children) {
-        if(inline) {
-            return (
-                <Row>
-                    <Col md="12"> <strong>{label}: </strong> { renderChildren(children) }</Col>
-                </Row>
-            )
-        } else {
-            <Row>
-                <Col md="12"> <strong>{label}: </strong></Col>
-                <Col md="12">{ renderChildren(children) }</Col>
-            </Row>
-        }        
-    }
-    return null;
-}
 
 const RecordLink = ({ label, children, email=false }) => {
     if(children) {
@@ -76,19 +48,19 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     <Modal.Title>{ record.nombre }</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <RecordField label="Forma de acceso">{record.acceso}</RecordField>
-                    <RecordField label="Institucion">{record.institucion}</RecordField>
-                    <RecordField label="Año de inicio">{record.anno}</RecordField>
-                    <RecordField label="Referente de registro">{record.referente}</RecordField>
-                    <RecordLink label="Correo referente" email="true">{record.contacto}</RecordLink>
-                    <RecordLink label="Link">{record.link}</RecordLink>   
+                    <GenericField label="Forma de acceso">{record.acceso}</GenericField>
+                    <GenericField label="Institucion">{record.institucion}</GenericField>
+                    <GenericField label="Año de inicio">{record.anno}</GenericField>
+                    <GenericField label="Referente de registro">{record.referente}</GenericField>
+                    <GenericField label="Correo referente" email="true">{record.contacto}</GenericField>
+                    <GenericField label="Link">{record.link}</GenericField>   
                     <hr/>
-                    <RecordField label="Linea de acción" inline="false">{record.linea_accion}</RecordField>           
-                    <RecordField label="Descripción general" html="true" inline="false">{record.descripcion}</RecordField>      
-                    <RecordField label="Objetivos" html="true" inline="false">{record.objetivo}</RecordField>                    
-                    <RecordField label="Población objetivo" html="true" inline="false">{record.poblacion_objetivo}</RecordField>                    
-                    <RecordField label="Razones de interés" html="true" inline="false">{record.razon_interes}</RecordField>
-                    <RecordField label="Evaluación de impacto" html="true" inline="false">{record.evaluacion_impacto}</RecordField>
+                    <GenericField label="Linea de acción" inline="false">{record.linea_accion}</GenericField>           
+                    <GenericField label="Descripción general" html="true" inline="false">{record.descripcion}</GenericField>      
+                    <GenericField label="Objetivos" html="true" inline="false">{record.objetivo}</GenericField>                    
+                    <GenericField label="Población objetivo" html="true" inline="false">{record.poblacion_objetivo}</GenericField>                    
+                    <GenericField label="Razones de interés" html="true" inline="false">{record.razon_interes}</GenericField>
+                    <GenericField label="Evaluación de impacto" html="true" inline="false">{record.evaluacion_impacto}</GenericField>
                     <hr/>
                     <AlcanceTable subsidios_produccion={record.subsidios_produccion} credito={record.credito} asistencia_tecnica={record.asistencia_tecnica} capacitacion={record.capacitacion} />
                 </Modal.Body>

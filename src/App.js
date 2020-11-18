@@ -7,6 +7,7 @@ import Intro from './Components/Intro';
 import Home from './Pages/Home';
 import RecordList from "./Pages/RecordList";
 import "./App.scss"
+import EventList from "./Pages/EventList";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/records' component={RecordList}/>
+          <Route exact path='/events' component={EventList}/>
         </Switch>
       </Router> 
       

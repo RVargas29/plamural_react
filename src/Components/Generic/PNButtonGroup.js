@@ -1,19 +1,19 @@
 import { Button, ButtonGroup } from "react-bootstrap";
 
-const PNButtonGroup = ({recordIndex, recordCount, handlePreviousNext}) => {
+const PNButtonGroup = ({index, count, handlePreviousNext}) => {
     var handlePreviousNextCallback = handlePreviousNext
     var previous = null;
     var next = null;
-    if(recordIndex > 0) {
+    if(index > 0) {
         previous = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex-1)}}>
+            <Button variant="primary" onClick={() => {handlePreviousNextCallback(index-1)}}>
                 Anterior
             </Button>
         )
     }
-    if(recordIndex < recordCount - 1) {
+    if(index < count - 1) {
         next = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(recordIndex+1)}}>
+            <Button variant="primary" onClick={() => {handlePreviousNextCallback(index+1)}}>
                 Siguiente
             </Button>
         )

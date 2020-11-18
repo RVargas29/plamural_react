@@ -65,7 +65,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     <AlcanceTable subsidios_produccion={record.subsidios_produccion} credito={record.credito} asistencia_tecnica={record.asistencia_tecnica} capacitacion={record.capacitacion} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <PNButtonGroup recordIndex={recordIndex} recordCount={recordCount} handlePreviousNext={handlePreviousNext} />
+                    <PNButtonGroup index={recordIndex} count={recordCount} handlePreviousNext={handlePreviousNext} />
                 </Modal.Footer>
             </Modal>
         )

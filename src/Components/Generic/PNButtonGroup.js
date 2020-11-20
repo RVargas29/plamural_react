@@ -1,4 +1,7 @@
 import { Button, ButtonGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import "./PNButtonGroup.css"
 
 const PNButtonGroup = ({index, count, handlePreviousNext}) => {
     var handlePreviousNextCallback = handlePreviousNext
@@ -6,23 +9,27 @@ const PNButtonGroup = ({index, count, handlePreviousNext}) => {
     var next = null;
     if(index > 0) {
         previous = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(index-1)}}>
-                Anterior
-            </Button>
+            <div className="arrow-container previous">
+                <Link onClick={() => {handlePreviousNextCallback(index-1)}}>
+                    <i class="fas fa-angle-left"></i>
+                </Link>
+            </div>
         )
     }
     if(index < count - 1) {
         next = (
-            <Button variant="primary" onClick={() => {handlePreviousNextCallback(index+1)}}>
-                Siguiente
-            </Button>
+            <div className="arrow-container next">
+                <Link onClick={() => {handlePreviousNextCallback(index+1)}}>
+                    <i class="fas fa-angle-right"></i>
+                </Link>
+            </div>
         )
     }
-    return(
-        <ButtonGroup>                        
+    return(            
+        <div className="modal-next-previous">
             {previous}
-                {next}
-        </ButtonGroup>
+            {next}
+        </div> 
     )
 }
 

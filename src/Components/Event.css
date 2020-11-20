@@ -1,3 +1,55 @@
 .event-container .btn-group {
     margin-top: 20px;
 }
+
+.event-container .icon {
+    float: left;
+}
+  
+.event-container .icon svg {
+    color: #666666;
+    font-size: 80px;
+    transition: 0.5s;
+    line-height: 0;
+}
+  
+.event-container .icon svg::before {
+    background: #1dc8cd;
+    background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.event-container h4 {
+    margin-left: 100px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+  
+.event-container h4 {
+    color: #111;
+}
+  
+.event-container .description {
+    font-size: 14px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+  
+@media (max-width: 767px) {
+    .event-container .box {
+      margin-bottom: 20px;
+    }
+    .event-container .icon {
+      float: none;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .event-container h4, #event-container .description {
+      margin-left: 0;
+      text-align: center;
+    }
+}

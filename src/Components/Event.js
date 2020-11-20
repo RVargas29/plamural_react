@@ -7,9 +7,10 @@ const Event = ({ event, handleOpen, arrayPosition }) => {
 
     return (
         <Col md="6">
-            <div className="event-container box">
+            <div className="box wow event-container">
+                <div className="icon"><i class="fas fa-calendar-alt"></i></div>
                 <h4 className="title">{ event.title }</h4>
-                <div>
+                <div className="description">
                     <div>
                         <strong>Fecha y hora: </strong><span>{ event.fecha }</span>
                     </div>

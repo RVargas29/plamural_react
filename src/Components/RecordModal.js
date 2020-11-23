@@ -19,7 +19,6 @@ const AlcanceTable = ({ subsidios_produccion, credito, asistencia_tecnica, capac
     return (
         <Row>
             <Col md="12">
-                <h4>Alcance</h4>
                 <table className="table table-bordered">
                     <tr>
                         <th>Subsidios</th>
@@ -43,16 +42,16 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
     
     if(show && record) {
         return(
-            <Modal show={show} onHide={handleClose} size="lg">
+            <Modal show={show} onHide={handleClose} size="lg" className="info-modal">
                 <Modal.Header closeButton>
-                    <Modal.Title>{ record.nombre }</Modal.Title>
+                    <h4 className="title">{ record.nombre }</h4>
                 </Modal.Header>
                 <Modal.Body>
                 <Accordion defaultActiveKey="0">
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                Información general
+                                <i class="fas fa-info-circle"></i> Información general
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -68,9 +67,9 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     </Card>
                     <Card>
                         <Card.Header>
-                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                            Detalle
-                        </Accordion.Toggle>
+                            <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                                <i class="fas fa-align-justify"></i> Detalle
+                            </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
                         <Card.Body>
@@ -85,9 +84,9 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     </Card>
                     <Card>
                         <Card.Header>
-                        <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                            Alcance
-                        </Accordion.Toggle>
+                            <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                                <i class="fas fa-table"></i> Alcance
+                            </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">
                         <Card.Body>

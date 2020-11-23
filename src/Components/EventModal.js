@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { Accordion, Button, ButtonGroup, Card, Col, Modal, Row } from "react-bootstrap";
+import { Accordion, Button, Card, Modal } from "react-bootstrap";
 import GenericField from "./Generic/GenericField";
 import PNButtonGroup from "./Generic/PNButtonGroup";
 import "./EventModal.css";
 
 const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePreviousNext }) => {
-    
-    var [programa, setPrograma] = useState(null)
-    var [hasLoaded, setHasLoaded] = useState(false)
     
     if(show && event) {
         return (
@@ -38,7 +35,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
                             <Accordion.Collapse eventKey="1">
                                 <Card.Body>
                                     <GenericField label="Presentaciones" html="true" inline="false">{event.presentaciones}</GenericField>  
-                                    <GenericField label="Programa" inline="true"><a href={ "http://plamurural.local" + event.programa } target="_blank">Descargar programa</a></GenericField>  
+                                    <GenericField label="Programa" inline="true"><a href={ "http://plamurural.local" + event.programa } rel="noreferrer" target="_blank">Descargar programa</a></GenericField>  
                                 </Card.Body>
                             </Accordion.Collapse>
                         </Card>

@@ -1,5 +1,3 @@
-
-import { BrowserRouter } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './Components/Header';
@@ -18,7 +16,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/records' component={RecordList}/>
+          <Route exact path='/records/:type?' component={RecordList}/>
           <Route exact path='/events' component={EventList}/>
         </Switch>
       </Router> 

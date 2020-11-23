@@ -1,4 +1,4 @@
-var apiUrl = 'http://plamurural.local';
+var apiUrl = 'http://dev-plamurural.pantheonsite.io/';
 
 const getHeaders = async () => {
     const headers = {

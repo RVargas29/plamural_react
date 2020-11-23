@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Accordion, Button, Card, Modal } from "react-bootstrap";
 import GenericField from "./Generic/GenericField";
 import PNButtonGroup from "./Generic/PNButtonGroup";

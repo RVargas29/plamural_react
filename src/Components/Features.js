@@ -31,13 +31,13 @@ const Features = () => {
                     <Col lg="8" md="7">
                         <Row>
                             <FeatureBox iconClass="fa-tachometer-alt" title="Sobre mujer rural" link="/records/sobre">
-                                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident clarida perendo.
+                                Se detallan las diferentes políticas públicas impulsadas y en implementación en los países que tienen como foco de atención las mujeres rurales de la Agricultura Familiar
                             </FeatureBox>
-                            <FeatureBox iconClass="fa-flask" title="Sobre Emprendimientos" link="/records/emprendimientos">
-                                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata noble dynala mark.
+                            <FeatureBox iconClass="fa-flask" title="Sobre emprendimientos" link="/records/emprendimientos">
+                            Lista las políticas públicas, programas, proyectos y otros instrumentos de políticas que incentivan emprendimientos, negocios o actividades productivas con fines comerciales.
                             </FeatureBox>
-                            <FeatureBox iconClass="fa-flask" title="Emprendedurismo para mujer rural" link="/records/emprendeurismo">
-                                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata noble dynala mark.
+                            <FeatureBox iconClass="fa-flask" title="Sobre emprendimientos de mujeres rurales" link="/records/emprendeurismo">
+                            Sistematiza las políticas públicas que incentivan emprendimientos liderados o implementados por mujeres rurales y su inclusión a dinámicas productivas.
                             </FeatureBox>
                         </Row>
                     </Col>                                       

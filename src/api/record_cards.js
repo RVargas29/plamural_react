@@ -6,13 +6,13 @@ const addCategoryFilter = (category_filter) => {
         var value = null;
         switch (category_filter) {
             case "sobre":
-                value = 3
+                value = 1
                 break;
             case "emprendimientos":
-                value = 8
+                value = 2
                 break;
             case "emprendeurismo":
-                value = 6
+                value = 3
                 break;
             default:
                 break;

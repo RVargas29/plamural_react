@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import { Accordion, Button, ButtonGroup, Card, Col, Modal, Row } from "react-bootstrap";
+import { Accordion, Button, Card, Col, Modal, Row } from "react-bootstrap";
 import GenericField from "./Generic/GenericField";
 import PNButtonGroup from "./Generic/PNButtonGroup";
 import "./RecordModal.css";
@@ -60,7 +59,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                             <GenericField label="Institucion">{record.institucion}</GenericField>
                             <GenericField label="Año de inicio">{record.anno}</GenericField>
                             <GenericField label="Referente de registro">{record.referente}</GenericField>
-                            <GenericField label="Correo referente" email="true">{record.contacto}</GenericField>
+                            <RecordLink label="Correo referente" email="true">{record.contacto}</RecordLink>
                             <GenericField label="Link">{record.link}</GenericField>   
                         </Card.Body>
                         </Accordion.Collapse>

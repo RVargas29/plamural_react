@@ -7,8 +7,9 @@ import RecordModal from "../Components/RecordModal";
 import SectionHeader from "../Components/SectionHeader";
 import "./RecordList.css";
 
-const RecordList = () => {
+const RecordList = ({ match }) => {
 
+    const {category_filter} = match.params
     var [records, setRecords] = useState(null)
     var [recordCount, setRecordCount] = useState(0)
     var [currentRecord, setCurrentRecord] = useState(null)
@@ -34,12 +35,11 @@ const RecordList = () => {
     }
 
     useEffect(() => {
-        getRecordCards()
+        getRecordCards(category_filter)
         .then((res) => {
             setRecords(res)
             setRecordCount(res.length)
-            setLoaded(true)
-            
+            setLoaded(true)        
         })
         .catch(error => {
             console.log(error)
@@ -51,7 +51,7 @@ const RecordList = () => {
             <main>
                 <section id="record-list" className="section-bg">         
                     <Container>
-                        <SectionHeader text="Records" />
+                        <SectionHeader text="Políticas públicas" />
                         <Row>
                             { records.map((record, index) => {
                                 return(

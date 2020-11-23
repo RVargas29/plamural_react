@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/records/:type?' component={RecordList}/>
+          <Route exact path='/records/:category_filter?' component={RecordList}/>
           <Route exact path='/events' component={EventList}/>
         </Switch>
       </Router> 

@@ -1,0 +1,18 @@
+/* Clients Section
+--------------------------------*/
+#sponsors {
+    padding: 30px 0;
+    background: #fff;
+    overflow: hidden;
+}
+  
+#sponsors img {
+    max-width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 15px 0;
+}
+  
+#sponsors img:hover {
+    opacity: 1;
+}

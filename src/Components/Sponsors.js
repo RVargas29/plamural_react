@@ -1,4 +1,4 @@
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 import ImageLink from "./Generic/ImageLink"
 
 import agfam from "../static/images/sponsors/agfam.png";
@@ -11,40 +11,44 @@ import ministerio_argentina from "../static/images/sponsors/ministerio_argentina
 import ministerio from "../static/images/sponsors/ministerio.png";
 import reaf from "../static/images/sponsors/reaf.png";
 
+import "./Sponsors.css"
+
 const Sponsors = () => {
     return (
         <section id="sponsors">
-             <Row>
-                 <Col md="3">
-                     <ImageLink redirectUrl="https://iica.int" image={iica} altText="IICA" />
-                 </Col>
-                 <Col md="3">
-                     <ImageLink redirectUrl="https://iica.int" image={agfam} altText="IICA" />
-                 </Col>
-                 <Col md="3">
-                     <ImageLink redirectUrl="https://iica.int" image={reaf} altText="IICA" />
-                 </Col>
-                 <Col md="3">
-                     <ImageLink redirectUrl="https://iica.int" image={minagricultura} altText="IICA" />
-                 </Col>
-             </Row>
-             <Row>
-                 <Col md="2">
-                    <ImageLink redirectUrl="https://iica.int" image={ministerio} altText="IICA" />
-                 </Col>
-                 <Col md="2">
-                    <ImageLink redirectUrl="https://iica.int" image={mapa} altText="IICA" />
-                 </Col>
-                 <Col md="2">
-                    <ImageLink redirectUrl="https://iica.int" image={ministerio_argentina} altText="IICA" />
-                 </Col>
-                 <Col md="2">
-                    <ImageLink redirectUrl="https://iica.int" image={indap} altText="IICA" />
-                 </Col>
-                 <Col md="2">
-                    <ImageLink redirectUrl="https://iica.int" image={mgap} altText="IICA" />
-                 </Col>
-             </Row>
+            <Container>
+                <Row>
+                    <Col md="3" >
+                        <ImageLink redirectUrl="https://iica.int" image={iica} altText="IICA" />
+                    </Col>
+                    <Col md="3">
+                        <ImageLink redirectUrl="http://www.fao.org/family-farming-decade/home/es/" image={agfam} altText="IICA" />
+                    </Col>
+                    <Col md="3">
+                        <ImageLink redirectUrl="http://www.reafmercosul.org/" image={reaf} altText="IICA" />
+                    </Col>
+                    <Col md="3">
+                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={minagricultura} altText="IICA" />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{ offset: 1, span:2 }}>
+                        <ImageLink redirectUrl="https://www.mag.gov.py/" image={ministerio} altText="IICA" />
+                    </Col>
+                    <Col md="2">
+                        <ImageLink redirectUrl="https://www.gov.br/agricultura/pt-br" image={mapa} altText="IICA" />
+                    </Col>
+                    <Col md="2">
+                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={ministerio_argentina} altText="IICA" />
+                    </Col>
+                    <Col md="2">
+                        <ImageLink redirectUrl="https://www.minagri.gob.cl/" image={indap} altText="IICA" />
+                    </Col>
+                    <Col md="2">
+                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={mgap} altText="IICA" />
+                    </Col>
+                </Row>
+             </Container>
         </section>
     )
 }

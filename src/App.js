@@ -7,7 +7,7 @@ import RecordList from "./Pages/RecordList";
 import "./App.scss"
 import EventList from "./Pages/EventList";
 import Sponsors from "./Components/Sponsors";
-
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         </Switch>
       </Router> 
       <Sponsors />
+      <Contact />
     </div>
   );
 }

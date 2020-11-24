@@ -46,12 +46,26 @@ const RecordList = ({ match }) => {
         })
     }, [])
 
+    const generateTitle = (category_filter) => {
+        switch (category_filter) {
+            case "sobre":
+                return "Sobre mujer rural"
+            case "emprendimientos":
+                return "Sobre emprendimientos"
+            case "emprendeurismo":
+                return "Sobre emprendimientos de mujeres rurales"
+            default:
+                return "Políticas públicas"
+                break;
+        }
+    }
+
     if(loaded) {
         return (     
             <main>
                 <section id="record-list" className="section-bg">         
                     <Container>
-                        <SectionHeader text="Políticas públicas" />
+                        <SectionHeader text={generateTitle(category_filter)} />
                         <Row>
                             { records.map((record, index) => {
                                 return(

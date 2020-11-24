@@ -50,7 +50,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                <i class="fas fa-info-circle"></i> Información general
+                                <i className="fas fa-info-circle"></i> Información general
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -67,7 +67,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                <i class="fas fa-align-justify"></i> Detalle
+                                <i className="fas fa-align-justify"></i> Detalle
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -84,7 +84,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                                <i class="fas fa-table"></i> Alcance
+                                <i className="fas fa-table"></i> Alcance
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">

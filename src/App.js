@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import RecordList from "./Pages/RecordList";
 import "./App.scss"
 import EventList from "./Pages/EventList";
+import Sponsors from "./Components/Sponsors";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route exact path='/events' component={EventList}/>
         </Switch>
       </Router> 
-      
+      <Sponsors />
     </div>
   );
 }

@@ -62,7 +62,7 @@ const EventList = ({ page="list" }) => {
             <main>
                 <section id="event-list" className="section-bg">         
                     <Container>
-                        <SectionHeader text="Events" />
+                        <SectionHeader text="Eventos y Foros" />
                         <Row>
                             {
                                 events.map((event, index) => {

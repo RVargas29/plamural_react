@@ -8,7 +8,7 @@ const Event = ({ event, handleOpen, arrayPosition }) => {
     return (
         <Col md="6">
             <div className="box wow event-container">
-                <div className="icon"><i class="fas fa-calendar-alt"></i></div>
+                <div className="icon"><i className="fas fa-calendar-alt"></i></div>
                 <h4 className="title">{ event.title }</h4>
                 <div className="description">
                     <div>
@@ -17,7 +17,7 @@ const Event = ({ event, handleOpen, arrayPosition }) => {
                     <ButtonGroup>
                         <Button onClick={ () => {
                             handleOpenCallback(event, arrayPosition)
-                        } }><i class="fas fa-file"></i> Más información</Button>
+                        } }><i className="fas fa-file"></i> Más información</Button>
                     </ButtonGroup>
                 </div>
             </div>

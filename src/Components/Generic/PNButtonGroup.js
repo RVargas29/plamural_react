@@ -10,7 +10,7 @@ const PNButtonGroup = ({index, count, handlePreviousNext}) => {
         previous = (
             <div className="arrow-container previous">
                 <Link onClick={() => {handlePreviousNextCallback(index-1)}}>
-                    <i class="fas fa-angle-left"></i>
+                    <i className="fas fa-angle-left"></i>
                 </Link>
             </div>
         )
@@ -19,7 +19,7 @@ const PNButtonGroup = ({index, count, handlePreviousNext}) => {
         next = (
             <div className="arrow-container next">
                 <Link onClick={() => {handlePreviousNextCallback(index+1)}}>
-                    <i class="fas fa-angle-right"></i>
+                    <i className="fas fa-angle-right"></i>
                 </Link>
             </div>
         )

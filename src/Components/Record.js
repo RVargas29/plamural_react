@@ -24,7 +24,7 @@ const Record = ({ record, handleOpen, arrayPosition }) => {
                     <ButtonGroup>
                         <Button onClick={ () => {
                             handleOpenCallback(record, arrayPosition)
-                        } }><i class="fas fa-file"></i> Más información</Button>
+                        } }><i className="fas fa-file"></i> Más información</Button>
                     </ButtonGroup>
                 </div>
             </div>

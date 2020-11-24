@@ -7,7 +7,7 @@ const MoreLink = ({ text="Ver más", link }) => {
         <Row>
             <Col md={{ span:2, offset:5 }}>
                 <Link to={ link } className="btn btn-secondary">
-                    <i class="fas fa-list"></i> {text}
+                    <i className="fas fa-list"></i> {text}
                 </Link>
             </Col>
         </Row>

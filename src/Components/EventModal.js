@@ -16,7 +16,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
                         <Card>
                             <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    <i class="fas fa-info-circle"></i> Información general
+                                    <i className="fas fa-info-circle"></i> Información general
                                 </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey="0">
@@ -28,7 +28,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
                         <Card>
                             <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                    <i class="fas fa-file"></i> Presentaciones y documentos
+                                    <i className="fas fa-file"></i> Presentaciones y documentos
                                 </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey="1">
@@ -41,7 +41,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
                         <Card>
                             <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                                    <i class="fas fa-video"></i> Video / Transmisión
+                                    <i className="fas fa-video"></i> Video / Transmisión
                                 </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey="2">

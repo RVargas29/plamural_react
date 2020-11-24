@@ -60,7 +60,7 @@ const RecordModal = ({record, recordIndex, show, recordCount, handleClose, handl
                             <GenericField label="Año de inicio">{record.anno}</GenericField>
                             <GenericField label="Referente de registro">{record.referente}</GenericField>
                             <RecordLink label="Correo referente" email="true">{record.contacto}</RecordLink>
-                            <GenericField label="Link">{record.link}</GenericField>   
+                            <RecordLink label="Link">{record.link}</RecordLink>   
                         </Card.Body>
                         </Accordion.Collapse>
                     </Card>

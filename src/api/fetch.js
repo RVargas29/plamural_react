@@ -1,4 +1,4 @@
-var apiUrl = 'http://dev-plamurural.pantheonsite.io/';
+import { apiUrl as apiUrl } from '../app.json';
 
 const getHeaders = async () => {
     const headers = {

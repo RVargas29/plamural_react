@@ -8,6 +8,7 @@ import "./App.scss"
 import EventList from "./Pages/EventList";
 import Sponsors from "./Components/Sponsors";
 import Contact from "./Components/Contact";
+import RepoList from "./Pages/RepoList";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/' component={Home}/>
           <Route exact path='/records/:category_filter?' component={RecordList}/>
           <Route exact path='/events' component={EventList}/>
+          <Route exact path='/repository' component={RepoList}/>
         </Switch>
       </Router> 
       <Sponsors />

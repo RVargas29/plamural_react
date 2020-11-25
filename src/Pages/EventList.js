@@ -48,7 +48,8 @@ const EventList = ({ page="list" }) => {
     }, [])
 
     const renderMoreLink = (page) =>{
-        if(page == "home") {
+        if(page == "home" && eventCount > 4) {
+            
             return (
                 <MoreLink link='/events' />
             )

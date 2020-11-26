@@ -4,8 +4,7 @@ import { ButtonGroup, Col } from "react-bootstrap"
 
 import "./Doc.css"
 
-const Doc = ({ doc, handleOpen, arrayPosition }) => {
-    var handleOpenCallback = handleOpen;
+const Doc = ({ doc, arrayPosition }) => {
 
     const tags = (tags) => {
         if(tags) {

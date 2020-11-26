@@ -10,27 +10,7 @@ import "./RepoList.css"
 const RepoList = ({ match }) => {
     var [docs, setDocs] = useState(null)
     var [docsCount, setDocsCount] = useState(0)
-    var [currentDoc, setCurrentDoc] = useState(null)
-    var [currentDocIndex, setCurrentDocIndex] = useState(0)
     var [loaded, setLoaded] = useState(false)    
-    var [showModal, setShowModal] = useState(false)
-
-    const handleOpen = (doc, arrayPosition) => {
-        setCurrentDoc(doc)
-        setCurrentDocIndex(arrayPosition)
-        setShowModal(true);
-    } 
-
-    const handleClose = () => {
-        setCurrentDoc(null)
-        setCurrentDocIndex(0)
-        setShowModal(false)
-    }
-
-    const handlePreviousNext = (arrayPosition) => {
-        setCurrentDoc(docs[arrayPosition])
-        setCurrentDocIndex(arrayPosition)
-    }
 
     useEffect(() => {
         getDocuments()
@@ -53,7 +33,7 @@ const RepoList = ({ match }) => {
                         <Row>
                             { docs.map((doc, index) => {
                                 return(
-                                    <Doc doc={doc} arrayPosition={index} handleOpen={handleOpen} />
+                                    <Doc doc={doc} arrayPosition={index} />
                                 )
                             })}
                         </Row>

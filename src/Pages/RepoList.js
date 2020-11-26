@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { getDocuments } from "../api/docs";
-import Doc from "../Components/Doc";
+import Doc from "../Components/Documents/Doc";
 import SectionHeader from "../Components/SectionHeader";
 
 const RepoList = ({ match }) => {

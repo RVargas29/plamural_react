@@ -1,4 +1,4 @@
-import { apiUrl as apiUrl } from '../app.json';
+import { apiUrl as apiUrl } from '../../app.json';
 
 import { ButtonGroup, Col } from "react-bootstrap"
 

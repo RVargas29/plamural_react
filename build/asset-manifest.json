@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf3cfa99.chunk.css",
+    "main.js": "/static/js/main.36f2add9.chunk.js",
+    "main.js.map": "/static/js/main.36f2add9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1f800040.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1f800040.js.map",
+    "static/js/2.8ef9d46e.chunk.js": "/static/js/2.8ef9d46e.chunk.js",
+    "static/js/2.8ef9d46e.chunk.js.map": "/static/js/2.8ef9d46e.chunk.js.map",
+    "static/js/3.3642d8a8.chunk.js": "/static/js/3.3642d8a8.chunk.js",
+    "static/js/3.3642d8a8.chunk.js.map": "/static/js/3.3642d8a8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cf3cfa99.chunk.css.map": "/static/css/main.cf3cfa99.chunk.css.map",
+    "static/js/2.8ef9d46e.chunk.js.LICENSE.txt": "/static/js/2.8ef9d46e.chunk.js.LICENSE.txt",
+    "static/media/about-img.dcd15f0c.jpg": "/static/media/about-img.dcd15f0c.jpg",
+    "static/media/agfam.a1658058.png": "/static/media/agfam.a1658058.png",
+    "static/media/features.f5375798.jpg": "/static/media/features.f5375798.jpg",
+    "static/media/gallery-1.c4310168.png": "/static/media/gallery-1.c4310168.png",
+    "static/media/gallery-2.9ab44abd.png": "/static/media/gallery-2.9ab44abd.png",
+    "static/media/gallery-3.e29f03b5.png": "/static/media/gallery-3.e29f03b5.png",
+    "static/media/gallery-4.9b943be5.png": "/static/media/gallery-4.9b943be5.png",
+    "static/media/gallery-5.2ec3d8d1.png": "/static/media/gallery-5.2ec3d8d1.png",
+    "static/media/gallery-6.367b1195.png": "/static/media/gallery-6.367b1195.png",
+    "static/media/iica.57b7f089.png": "/static/media/iica.57b7f089.png",
+    "static/media/indap.30fa932d.png": "/static/media/indap.30fa932d.png",
+    "static/media/Intro.css": "/static/media/intro-bg.9788a3c1.jpg",
+    "static/media/intro-left.e35f6c9b.jpg": "/static/media/intro-left.e35f6c9b.jpg",
+    "static/media/intro-right.d1411945.jpg": "/static/media/intro-right.d1411945.jpg",
+    "static/media/mapa.ad1b84f3.png": "/static/media/mapa.ad1b84f3.png",
+    "static/media/minagricultura.014e16d8.jpg": "/static/media/minagricultura.014e16d8.jpg",
+    "static/media/ministerio.8ed37a50.png": "/static/media/ministerio.8ed37a50.png",
+    "static/media/ministerio_argentina.3fea74e8.png": "/static/media/ministerio_argentina.3fea74e8.png",
+    "static/media/reaf.f12f1983.png": "/static/media/reaf.f12f1983.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f800040.js",
+    "static/js/2.8ef9d46e.chunk.js",
+    "static/css/main.cf3cfa99.chunk.css",
+    "static/js/main.36f2add9.chunk.js"
+  ]
+}

@@ -1,6 +1,6 @@
 import { Accordion, Button, Card, Col, Modal, Row } from "react-bootstrap";
-import GenericField from "./Generic/GenericField";
-import PNButtonGroup from "./Generic/PNButtonGroup";
+import GenericField from "../Generic/GenericField";
+import PNButtonGroup from "../Generic/PNButtonGroup";
 import "./RecordModal.css";
 
 const RecordLink = ({ label, children, email=false }) => {

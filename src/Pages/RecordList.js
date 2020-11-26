@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { getRecordCards } from "../api/record_cards";
-import Record from "../Components/Record";
-import RecordModal from "../Components/RecordModal";
+import Record from "../Components/Records/Record";
+import RecordModal from "../Components/Records/RecordModal";
 import SectionHeader from "../Components/SectionHeader";
 import "./RecordList.css";
 

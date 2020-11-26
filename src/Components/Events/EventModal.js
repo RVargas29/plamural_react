@@ -1,6 +1,6 @@
 import { Accordion, Button, Card, Modal } from "react-bootstrap";
-import GenericField from "./Generic/GenericField";
-import PNButtonGroup from "./Generic/PNButtonGroup";
+import GenericField from "../Generic/GenericField";
+import PNButtonGroup from "../Generic/PNButtonGroup";
 import "./EventModal.css";
 
 const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePreviousNext }) => {

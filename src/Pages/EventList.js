@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 
 import { getEvents } from "../api/events";
-import Event from "../Components/Event";
-import EventModal from "../Components/EventModal";
+import Event from "../Components/Events/Event";
+import EventModal from "../Components/Events/EventModal";
 import MoreLink from "../Components/Generic/MoreLink";
 import SectionHeader from "../Components/SectionHeader";
 

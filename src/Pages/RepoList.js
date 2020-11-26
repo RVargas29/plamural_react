@@ -16,8 +16,8 @@ const RepoList = ({ match }) => {
     var [showModal, setShowModal] = useState(false)
 
     const handleOpen = (doc, arrayPosition) => {
-        currentDoc(doc)
-        currentDocIndex(arrayPosition)
+        setCurrentDoc(doc)
+        setCurrentDocIndex(arrayPosition)
         setShowModal(true);
     } 
 

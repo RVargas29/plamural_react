@@ -34,6 +34,10 @@
     line-height: 56px;
     color: #fff;
 }
+
+#intro h2.second-title {
+    margin-top: 0;
+}
   
 @media (max-width: 768px) {
     #intro h2 {

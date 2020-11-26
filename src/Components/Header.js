@@ -11,10 +11,11 @@ const Header = () => {
                 <Nav className="mr-auto">
                   <Nav.Link href="/">Inicio</Nav.Link>
                   <Nav.Link href="/#about">¿Qué es la plataforma?</Nav.Link>
-                  <Nav.Link href="/#features">Políticas Públicas</Nav.Link>
                   <Nav.Link href="/gobernanza">Gobernanza</Nav.Link>
-                  <Nav.Link href="/repository">Biblioteca</Nav.Link>
+                  <Nav.Link href="/#features">Políticas Públicas</Nav.Link>  
                   <Nav.Link href="#event-list">Eventos</Nav.Link>
+                  <Nav.Link href="/videos">Mujeres emprendedoras</Nav.Link>                
+                  <Nav.Link href="/repository">Biblioteca</Nav.Link>                  
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

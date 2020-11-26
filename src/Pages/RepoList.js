@@ -5,6 +5,8 @@ import { getDocuments } from "../api/docs";
 import Doc from "../Components/Documents/Doc";
 import SectionHeader from "../Components/SectionHeader";
 
+import "./RepoList.css"
+
 const RepoList = ({ match }) => {
     var [docs, setDocs] = useState(null)
     var [docsCount, setDocsCount] = useState(0)

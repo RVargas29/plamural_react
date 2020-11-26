@@ -8,7 +8,7 @@ const Intro = () => {
         <section id="intro">
             <div className="intro-text">
                 <h2>Plataforma de Mujeres Rurales Emprendedoras</h2>                
-                <h2>del MERCOSUR Ampliado</h2>
+                <h2 className="second-title">del MERCOSUR Ampliado</h2>
             </div>
             <div className="product-screens">
                 <div className="product-screen-left wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s" style={{ visibility: "visible", animationDuration: "0.6s", animationDelay: "0.4s", animationName: "fadeInUp" }}>

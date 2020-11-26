@@ -12,11 +12,13 @@ import ministerio from "../static/images/sponsors/ministerio.png";
 import reaf from "../static/images/sponsors/reaf.png";
 
 import "./Sponsors.css"
+import SectionHeader from "./SectionHeader";
 
 const Sponsors = () => {
     return (
         <section id="sponsors">
             <Container>
+                <SectionHeader text="Instituciones miembros" />
                 <Row>
                     <Col md="3" >
                         <ImageLink redirectUrl="https://iica.int" image={iica} altText="IICA" />
@@ -28,7 +30,7 @@ const Sponsors = () => {
                         <ImageLink redirectUrl="http://www.reafmercosul.org/" image={reaf} altText="IICA" />
                     </Col>
                     <Col md="3">
-                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={minagricultura} altText="IICA" />
+                        <ImageLink redirectUrl="https://www.minagricultura.gov.co/paginas/default.aspx" image={minagricultura} altText="IICA" />
                     </Col>
                 </Row>
                 <Row>
@@ -39,13 +41,13 @@ const Sponsors = () => {
                         <ImageLink redirectUrl="https://www.gov.br/agricultura/pt-br" image={mapa} altText="IICA" />
                     </Col>
                     <Col md="2">
-                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={ministerio_argentina} altText="IICA" />
+                        <ImageLink redirectUrl="https://www.argentina.gob.ar/agricultura" image={ministerio_argentina} altText="IICA" />
                     </Col>
                     <Col md="2">
                         <ImageLink redirectUrl="https://www.minagri.gob.cl/" image={indap} altText="IICA" />
                     </Col>
                     <Col md="2">
-                        <ImageLink redirectUrl="http://apps.iica.int/plamurural/" image={mgap} altText="IICA" />
+                        <ImageLink redirectUrl="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" image={mgap} altText="IICA" />
                     </Col>
                 </Row>
              </Container>

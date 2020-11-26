@@ -3,9 +3,9 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header id="header">
+        <header id="header" className="header-fixed">
           <Container>
-            <Navbar bg="light" expand="lg">
+            <Navbar expand="lg">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="main-navbar">
                 <Nav className="mr-auto">

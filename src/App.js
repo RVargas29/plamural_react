@@ -9,6 +9,7 @@ import EventList from "./Pages/EventList";
 import Sponsors from "./Components/Sponsors";
 import Contact from "./Components/Contact";
 import RepoList from "./Pages/RepoList";
+import VideoList from "./Pages/VideoList";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/records/:category_filter?' component={RecordList}/>
           <Route exact path='/events' component={EventList}/>
           <Route exact path='/repository' component={RepoList}/>
+          <Route exact path='/videos' component={VideoList}/>
         </Switch>
       </Router> 
       <Sponsors />

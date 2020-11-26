@@ -1,4 +1,5 @@
 import EventList from "./EventList"
+import VideoList from "./VideoList"
 
 const { default: About } = require("../Components/About")
 const { default: Features } = require("../Components/Features")
@@ -10,7 +11,8 @@ const Home = () => {
             <About />
             <Features />
             <EventList page="home"/>    
-            <PhotoGallery />        
+            <PhotoGallery />    
+            <VideoList />    
         </main>
     )
 }

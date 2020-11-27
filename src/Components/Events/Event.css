@@ -1,5 +1,13 @@
+.event-container {
+    min-height: 290px;
+    position: relative;
+}
+
 .event-container .btn-group {
     margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .event-container .icon {
@@ -23,15 +31,9 @@
   
 .event-container h4 {
     margin-left: 100px;
-    font-weight: 700;
     margin-bottom: 15px;
-    font-size: 18px;
 }
-  
-.event-container h4 {
-    color: #111;
-}
-  
+
 .event-container .description {
     font-size: 14px;
     margin-left: 100px;

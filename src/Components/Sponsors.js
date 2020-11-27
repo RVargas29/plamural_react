@@ -18,29 +18,29 @@ const Sponsors = () => {
     return (
         <section id="sponsors">
             <Container>
-                <SectionHeader text="Instituciones miembros" />
+                <SectionHeader text="Instituciones parte" />
                 <Row>
-                    <Col md="3" >
+                    <Col md="2" >
                         <ImageLink redirectUrl="https://iica.int" image={iica} altText="IICA" />
                     </Col>
-                    <Col md="3">
+                    <Col md="2">
                         <ImageLink redirectUrl="http://www.fao.org/family-farming-decade/home/es/" image={agfam} altText="IICA" />
                     </Col>
-                    <Col md="3">
+                    <Col md="2">
                         <ImageLink redirectUrl="http://www.reafmercosul.org/" image={reaf} altText="IICA" />
                     </Col>
-                    <Col md="3">
+                    <Col md="2">
                         <ImageLink redirectUrl="https://www.minagricultura.gov.co/paginas/default.aspx" image={minagricultura} altText="IICA" />
                     </Col>
-                </Row>
-                <Row>
-                    <Col md={{ offset: 1, span:2 }}>
+                    <Col md="2">
                         <ImageLink redirectUrl="https://www.mag.gov.py/" image={ministerio} altText="IICA" />
                     </Col>
                     <Col md="2">
                         <ImageLink redirectUrl="https://www.gov.br/agricultura/pt-br" image={mapa} altText="IICA" />
                     </Col>
-                    <Col md="2">
+                </Row>
+                <Row>    
+                    <Col md={{ offset:3, span:2 }}>
                         <ImageLink redirectUrl="https://www.argentina.gob.ar/agricultura" image={ministerio_argentina} altText="IICA" />
                     </Col>
                     <Col md="2">

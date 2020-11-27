@@ -1,3 +1,5 @@
+import { apiUrl as apiUrl } from '../../app.json';
+
 import { Accordion, Button, Card, Modal } from "react-bootstrap";
 import GenericField from "../Generic/GenericField";
 import PNButtonGroup from "../Generic/PNButtonGroup";
@@ -34,7 +36,7 @@ const EventModal = ({ event, eventIndex, show, eventCount, handleClose, handlePr
                             <Accordion.Collapse eventKey="1">
                                 <Card.Body>
                                     <GenericField label="Presentaciones" html="true" inline="false">{event.presentaciones}</GenericField>  
-                                    <GenericField label="Programa" inline="true"><a href={ "http://plamurural.local" + event.programa } rel="noreferrer" target="_blank">Descargar programa</a></GenericField>  
+                                    <GenericField label="Programa" inline="true"><a href={ apiUrl + event.programa } rel="noreferrer" target="_blank">Descargar programa</a></GenericField>  
                                 </Card.Body>
                             </Accordion.Collapse>
                         </Card>

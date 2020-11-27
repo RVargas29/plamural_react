@@ -20,6 +20,7 @@ const FeatureBox = ({ iconClass, title, link="/",children }) => {
 const Features = () => {
     return (
         <section id="features">
+            <a id="anchor-features" className="anchor"></a>
             <Container>
                 <Row>      
                     <Col lg="8" className="offset-lg-4">

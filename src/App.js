@@ -10,6 +10,7 @@ import Sponsors from "./Components/Sponsors";
 import Contact from "./Components/Contact";
 import RepoList from "./Pages/RepoList";
 import VideoList from "./Pages/VideoList";
+import Gobernanza from "./Pages/Gobernanza";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/gobernanza' component={Gobernanza}/>
           <Route exact path='/records/:category_filter?' component={RecordList}/>
           <Route exact path='/events' component={EventList}/>
           <Route exact path='/repository' component={RepoList}/>

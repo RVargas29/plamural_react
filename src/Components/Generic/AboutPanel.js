@@ -1,6 +1,6 @@
 import { Collapse } from 'react-bootstrap';
 
-const AboutPanel = ({ title, collapseVariable, collapseHandler, children }) => {
+const AboutPanel = ({ title, collapseVariable, collapseHandler, children, icon="far fa-check-square" }) => {
 
     var handleCollapse = collapseHandler;
 
@@ -9,7 +9,7 @@ const AboutPanel = ({ title, collapseVariable, collapseHandler, children }) => {
             <div className="panel-heading">
                 <h4 className="panel-title">
                     <a href="#" onClick={ (e) => { e.preventDefault(); handleCollapse(!collapseVariable) }}>
-                        <div style={{color:"cadetblue"}}><i className="far fa-check-square"></i> {title}</div>
+                        <div style={{color:"cadetblue"}}><i className={icon}></i> {title}</div>
                     </a>
                 </h4>
             </div>

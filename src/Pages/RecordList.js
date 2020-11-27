@@ -63,7 +63,8 @@ const RecordList = ({ match }) => {
     if(loaded) {
         return (     
             <main>
-                <section id="record-list" className="section-bg">         
+                <section id="record-list" className="section-bg">   
+                    <a href="" className="anchor" id="anchor-record-list"></a>      
                     <Container>
                         <SectionHeader text={generateTitle(category_filter)} />
                         <Row>
@@ -80,7 +81,11 @@ const RecordList = ({ match }) => {
         )
     } else {
         return (
-            <h1>Loading...</h1>
+            <section>
+                <a href="" className="anchor" id="anchor-record-list"></a>  
+                <h1>Cargando políticas públicas...</h1>    
+            </section>
+            
         )
     }
     

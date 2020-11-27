@@ -61,6 +61,7 @@ const EventList = ({ page="list" }) => {
     if(loaded) {
         return(
             <main>
+                <a className="anchor" id="anchor-event-list"></a>
                 <section id="event-list" className="section-bg">         
                     <Container>
                         <SectionHeader text="Eventos y Foros" />

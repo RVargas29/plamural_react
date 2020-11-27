@@ -49,11 +49,11 @@ const RecordList = ({ match }) => {
     const generateTitle = (category_filter) => {
         switch (category_filter) {
             case "sobre":
-                return "Sobre mujer rural"
+                return "Mujer rural"
             case "emprendimientos":
-                return "Sobre emprendimientos"
+                return "Emprendimientos y apoyo a la producción"
             case "emprendeurismo":
-                return "Sobre emprendimientos de mujeres rurales"
+                return "Apoyo a la producción para mujer rural"
             default:
                 return "Políticas públicas"
                 break;

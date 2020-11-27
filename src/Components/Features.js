@@ -30,13 +30,13 @@ const Features = () => {
                     </Col>     
                     <Col lg="8" md="7">
                         <Row>
-                            <FeatureBox iconClass="fa-tachometer-alt" title="Sobre mujer rural" link="/records/sobre">
+                            <FeatureBox iconClass="fa-tachometer-alt" title="Mujer rural" link="/records/sobre">
                                 Se detallan las diferentes políticas públicas impulsadas y en implementación en los países que tienen como foco de atención las mujeres rurales de la Agricultura Familiar
                             </FeatureBox>
-                            <FeatureBox iconClass="fa-flask" title="Sobre emprendimientos" link="/records/emprendimientos">
+                            <FeatureBox iconClass="fa-flask" title="Emprendimientos y apoyo a la producción" link="/records/emprendimientos">
                             Lista las políticas públicas, programas, proyectos y otros instrumentos de políticas que incentivan emprendimientos, negocios o actividades productivas con fines comerciales.
                             </FeatureBox>
-                            <FeatureBox iconClass="fa-flask" title="Sobre emprendimientos de mujeres rurales" link="/records/emprendeurismo">
+                            <FeatureBox iconClass="fa-flask" title="Apoyo a la producción para mujer rural" link="/records/emprendeurismo">
                             Sistematiza las políticas públicas que incentivan emprendimientos liderados o implementados por mujeres rurales y su inclusión a dinámicas productivas.
                             </FeatureBox>
                         </Row>

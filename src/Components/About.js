@@ -14,8 +14,9 @@ const About = () => {
     const [ porQueDd, setPorQueDd ] = useState(false);
     const [ paraQueDd, setParaQueDd ] = useState(false);
 
-    return(
+    return(        
         <section id="about" className="section-bg">
+            <a id="anchor-about" className="anchor"></a>
             <Container fluid>
                 <SectionHeader text="¿Qué es la plataforma?" />
                 <Row>

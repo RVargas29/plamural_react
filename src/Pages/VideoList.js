@@ -49,6 +49,7 @@ const VideoList = ({ match }) => {
     if(loaded) {
         return(
             <main>
+                <a className="anchor" id="anchor-video-list"></a>
                 <section id="video-list" className="section-bg">
                     <Container>
                         <SectionHeader text="Mujeres emprendedoras"/>
@@ -67,8 +68,11 @@ const VideoList = ({ match }) => {
             </main>
         )
     } else {
-        return (
-            <h1>Loading...</h1>
+        return (            
+            <section>
+                <a className="anchor" id="anchor-video-list"></a>
+                <h1>Cargando videos...</h1>
+            </section>            
         )
     }
 }

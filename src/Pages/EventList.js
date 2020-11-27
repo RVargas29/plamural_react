@@ -82,7 +82,10 @@ const EventList = ({ page="list" }) => {
         )
     } else {
         return (
-            <h1>Loading...</h1>
+            <section>
+                <a className="anchor" id="anchor-event-list"></a>
+                <h1>Cargando eventos...</h1>
+            </section>            
         )
     }
 

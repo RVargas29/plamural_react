@@ -13,6 +13,7 @@ const Gobernanza = () => {
 
     return (
         <section id="gobernanza">
+            <a className="anchor" id="anchor-gobernanza"></a>
             <SectionHeader text="Gobernanza" />
             <Container>
                 <Row>

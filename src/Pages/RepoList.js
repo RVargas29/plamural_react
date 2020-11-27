@@ -28,6 +28,7 @@ const RepoList = ({ match }) => {
         return (
             <main>
                 <section id="repo-list" className="section-bg">
+                <a href="" className="anchor" id="anchor-repo-list"></a>
                     <Container>
                         <SectionHeader text="Repositorio de documentos"/>
                         <Row>
@@ -43,7 +44,10 @@ const RepoList = ({ match }) => {
         )
     } else {
         return (
-            <h1>Loading...</h1>
+            <section>
+                <a href="" className="anchor" id="anchor-repo-list"></a>
+                <h1>Loading...</h1>
+            </section>            
         )
     }
 }
